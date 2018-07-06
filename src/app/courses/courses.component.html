@@ -1,0 +1,10 @@
+<h1>Courses</h1>
+
+<ul [@listStagger]="courses$">
+  <li *ngFor="let course of courses$">
+    <ul>
+      <li><strong>Course name:</strong> {{course.name}}</li>
+      <li><strong>Faculty:</strong> {{course.faculty}}</li>
+    </ul>
+  </li>
+</ul>

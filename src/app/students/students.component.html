@@ -1,0 +1,12 @@
+<h1>Students</h1>
+
+<ul [@listStagger]="students$">
+  <li *ngFor="let student of students$">
+    <a routerLink="studentDetails/{{student.id}}">{{student.firstName}} {{student.lastName}}</a>
+
+    <ul>
+      <li><strong>Age:</strong> {{student.age}}</li>
+      <li><strong>City: </strong> {{student.city}}</li>
+    </ul>
+  </li>
+</ul>

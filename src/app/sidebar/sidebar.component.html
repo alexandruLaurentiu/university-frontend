@@ -1,0 +1,19 @@
+<nav>
+  <ul>
+    <li>
+      <a routerLink="" [class.activated]="currentUrl == '/'">
+        <i class="material-icons">face</i>
+      </a>
+    </li>
+    <li>
+      <a routerLink="professors" [class.activated]="currentUrl == '/professors'">
+        <i class="material-icons">supervised_user_circle</i>
+      </a>
+    </li>
+    <li>
+      <a routerLink="courses" [class.activated]="currentUrl == '/courses'">
+        <i class="material-icons">assignment</i>
+      </a>
+    </li>
+  </ul>
+</nav>
